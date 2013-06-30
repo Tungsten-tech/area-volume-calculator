@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Area and Volume Calculator</title>
+	<script type="text/javascript" src="AreaVolumeCalculator.js"></script>
+</head>
+<body>
+<h1>Area and Volume Calculator</h1>
+<form>
+	<div id="dimensioninput">
+	<div class="dimensioncontainer">
+		<input type="text" value="Enter the length here!" onfocus="this.value = ''"/>
+		<select><option value="inches">in</option><option value="feet" selected="selected">ft</option><option value="yards">yd</option><option value="miles">mi</option><option value="millimeters">mm</option><option value="centimeters">cm</option><option value="meters">m</option><option value="kilometers">km</option></select>
+	</div>
+	<div class="dimensioncontainer">
+		<input type="text" value="Enter the width here!" onfocus="this.value = ''"/>
+		<select><option value="inches">in</option><option value="feet" selected="selected">ft</option><option value="yards">yd</option><option value="miles">mi</option><option value="millimeters">mm</option><option value="centimeters">cm</option><option value="meters">m</option><option value="kilometers">km</option></select>
+	</div>
+	<div class="dimensioncontainer" style="display:none;">
+		<input type="text" value="Enter the height here!" onfocus="this.value = ''" />
+		<select><option value="inches">in</option><option value="feet" selected="selected">ft</option><option value="yards">yd</option><option value="miles">mi</option><option value="millimeters">mm</option><option value="centimeters">cm</option><option value="meters">m</option><option value="kilometers">km</option></select>
+	</div>
+	</div>
+	Unit for result: <select id="desiredunit"><option value="inches">in</option><option value="feet" selected="selected">ft</option><option value="yards">yd</option><option value="miles">mi</option><option value="millimeters">mm</option><option value="centimeters">cm</option><option value="meters">m</option><option value="kilometers">km</option></select>
+	<div id="calcresult">Your result will appear here.</div>
+	<input type="button" id="formtoggle" onclick="formToggle()" value="Calculate Volume!" />
+	<input type="button" onclick="calcDimensions()" value="Calculate!" />
+</form>
+</body>
+</html>
