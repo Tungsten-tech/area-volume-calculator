@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Area and Volume Calculator</title>
+	<script type="text/javascript" src="./scripts/area-volume-calculator.js"></script>
+	<link rel="stylesheet" type="text/css" href="./styles/area-volume-calculator.css">
+</head>
+<body>
+<div id="wrapper">
+	<div id="content">
+		<h1>Area and Volume Calculator</h1>
+		<form>
+			<div>Desired Shape: 
+				<select id="desiredshape" onchange="formChange()">
+					<option value="a_rectangle">Area: Rectangle</option><option value="a_square">Area: Square/Diamond</option><option value="a_circle">Area: Circle</option><option value="a_triangle">Area: Triangle</option>
+					<option value="v_rightcircularcylinder">Volume: Right Circular Cylinder</option><option value="v_rightrectangularsolid">Volume: Right Rectangular Solid</option><option value="v_sphere">Volume: Sphere</option><option value="v_rightcircularcone">Volume: Right Circular Cone</option><option value="v_cube">Volume: Cube</option>
+				</select>
+			</div>
+			<div class="dimensioncontainer" style="display:block;">
+				<input type="text" value="Enter the length here!" onfocus="this.value = ''"/>
+				<select>
+					<option value="inches">in</option><option value="feet" selected="selected">ft</option><option value="yards">yd</option><option value="miles">mi</option><option value="millimeters">mm</option><option value="centimeters">cm</option><option value="meters">m</option><option value="kilometers">km</option></select>
+			</div>
+			<div class="dimensioncontainer" style="display:block;">
+				<input type="text" value="Enter the width here!" onfocus="this.value = ''"/>
+				<select><option value="inches">in</option><option value="feet" selected="selected">ft</option><option value="yards">yd</option><option value="miles">mi</option><option value="millimeters">mm</option><option value="centimeters">cm</option><option value="meters">m</option><option value="kilometers">km</option></select>
+			</div>
+			<div class="dimensioncontainer" style="display:none;">
+				<input type="text" value="Enter the height here!" onfocus="this.value = ''" />
+				<select><option value="inches">in</option><option value="feet" selected="selected">ft</option><option value="yards">yd</option><option value="miles">mi</option><option value="millimeters">mm</option><option value="centimeters">cm</option><option value="meters">m</option><option value="kilometers">km</option></select>
+			</div>
+			Unit for result: <select id="desiredunit"><option value="inches">in</option><option value="feet" selected="selected">ft</option><option value="yards">yd</option><option value="miles">mi</option><option value="millimeters">mm</option><option value="centimeters">cm</option><option value="meters">m</option><option value="kilometers">km</option></select>
+			<input type="button" onclick="calcDimensions()" value="Calculate!" />
+		</form>
+		<div id="calcresult">Your result will appear here.</div>
+	</div>
+</div>
+</body>
+</html>

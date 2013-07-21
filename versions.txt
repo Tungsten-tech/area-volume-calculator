@@ -1,0 +1,6 @@
+---Version 0.1.0.0---
+	- Added support for calculating areas and volumes for mutliple planes and solids: rectangle, square, circle, triangle, right circular cylinder, right rectangular solid, sphere, right circular cone, and cubes.
+	- Built a preliminary UI for the calculator. Features fluid/liquid design. (All images and fonts are free for commercial use. See "licenses.txt" file for more.)
+	- Rewrote "area-volume-calculator.js" with a modular, object-based design, allowing for a large array of functions for different shapes.
+---Version 0.0.1.0---
+	- 1st Commit of Area-Volume Calculator. This commit includes basic capabilities to perform area and volume calculators for any rectangular solid or plane. These calculations can be carried out in any of the following units: inches, feet, yards, US miles, millimeters, centimeters, meters, and kilometers.
