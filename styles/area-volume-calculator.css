@@ -67,7 +67,6 @@ h1 {}
 	border-radius: 50px 0px;
 	box-shadow: 0px 0px 500px 10px rgba(255,255,255,0.8);
 }
-form {text-align: right; white-space: nowrap;}
+form {text-align: left; white-space: nowrap;}
 #calcresult {text-align: center;}
-form, #calcresult {
-	float:left; display:block; margin:10px;}
+form, #calcresult {display:block; margin:10px;}

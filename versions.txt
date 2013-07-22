@@ -1,3 +1,7 @@
+---Version 0.1.1.0---
+	- Added support for significant figures. Results can now be returned in the original JavaScript result to the 21st decimal or rounded to the appropriate number of significant figures.
+	- Added support for calculating perimeters and surface areas for all applicable shapes supported in v.0.1.0.0.
+	- Slight aesthetic modification to area-volume-calculator.html and area-volume-calculator.css.
 ---Version 0.1.0.0---
 	- Added support for calculating areas and volumes for mutliple planes and solids: rectangle, square, circle, triangle, right circular cylinder, right rectangular solid, sphere, right circular cone, and cubes.
 	- Built a preliminary UI for the calculator. Features fluid/liquid design. (All images and fonts are free for commercial use. See "licenses.txt" file for more.)

@@ -12,24 +12,27 @@
 		<form>
 			<div>Desired Shape: 
 				<select id="desiredshape" onchange="formChange()">
+					<option value="p_rectangle">Perimeter: Rectangle</option><option value="p_square">Perimeter: Square/Diamond</option><option value="p_circle">Perimeter: Circle</option>
 					<option value="a_rectangle">Area: Rectangle</option><option value="a_square">Area: Square/Diamond</option><option value="a_circle">Area: Circle</option><option value="a_triangle">Area: Triangle</option>
 					<option value="v_rightcircularcylinder">Volume: Right Circular Cylinder</option><option value="v_rightrectangularsolid">Volume: Right Rectangular Solid</option><option value="v_sphere">Volume: Sphere</option><option value="v_rightcircularcone">Volume: Right Circular Cone</option><option value="v_cube">Volume: Cube</option>
+					<option value="sa_rightcircularcylinder">Surface Area: Right Circular Cylinder</option><option value="sa_rightrectangularsolid">Surface Area: Right Rectangular Solid</option><option value="sa_sphere">Surface Area: Sphere</option><option value="sa_rightcircularcone">Surface Area: Right Circular Cone</option><option value="sa_cube">Surface Area: Cube</option>
 				</select>
 			</div>
 			<div class="dimensioncontainer" style="display:block;">
-				<input type="text" value="Enter the length here!" onfocus="this.value = ''"/>
+				<input type="text" value="Enter the length here!" onfocus="this.value = ''" tabindex="1"/>
 				<select>
 					<option value="inches">in</option><option value="feet" selected="selected">ft</option><option value="yards">yd</option><option value="miles">mi</option><option value="millimeters">mm</option><option value="centimeters">cm</option><option value="meters">m</option><option value="kilometers">km</option></select>
 			</div>
 			<div class="dimensioncontainer" style="display:block;">
-				<input type="text" value="Enter the width here!" onfocus="this.value = ''"/>
+				<input type="text" value="Enter the width here!" onfocus="this.value = ''" tabindex="2"/>
 				<select><option value="inches">in</option><option value="feet" selected="selected">ft</option><option value="yards">yd</option><option value="miles">mi</option><option value="millimeters">mm</option><option value="centimeters">cm</option><option value="meters">m</option><option value="kilometers">km</option></select>
 			</div>
 			<div class="dimensioncontainer" style="display:none;">
-				<input type="text" value="Enter the height here!" onfocus="this.value = ''" />
+				<input type="text" value="Enter the height here!" onfocus="this.value = ''" tabindex="3"/>
 				<select><option value="inches">in</option><option value="feet" selected="selected">ft</option><option value="yards">yd</option><option value="miles">mi</option><option value="millimeters">mm</option><option value="centimeters">cm</option><option value="meters">m</option><option value="kilometers">km</option></select>
 			</div>
-			Unit for result: <select id="desiredunit"><option value="inches">in</option><option value="feet" selected="selected">ft</option><option value="yards">yd</option><option value="miles">mi</option><option value="millimeters">mm</option><option value="centimeters">cm</option><option value="meters">m</option><option value="kilometers">km</option></select>
+			Unit for result: <select id="desiredunit"><option value="inches">in</option><option value="feet" selected="selected">ft</option><option value="yards">yd</option><option value="miles">mi</option><option value="millimeters">mm</option><option value="centimeters">cm</option><option value="meters">m</option><option value="kilometers">km</option></select><br/>
+			<input type="checkbox" id="sigfigsinput">Round to Significant Digits? 
 			<input type="button" onclick="calcDimensions()" value="Calculate!" />
 		</form>
 		<div id="calcresult">Your result will appear here.</div>
